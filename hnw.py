@@ -14,7 +14,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def hi_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
   await update.message.reply_text('hi, I am Nagar Lay!')
   
-def handle_response(text: str) → str:
+def handle_response(text: str):
    processed: str = text.lower()
    
    if 'hello' in processed:
